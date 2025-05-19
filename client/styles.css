@@ -13,6 +13,7 @@ body {
 
 }
 
+
 /*Section 1 Navbar*/
 .navbar {
   background-color: #000;
@@ -167,6 +168,58 @@ body {
 .indicator.active {
   background-color: white;
 }
+
+/*Club statistics*/
+#statistics{
+    background-color: white;
+    position: relative;
+    
+}
+
+.container-fluid{
+    padding:3% 15% 7%;
+}
+
+.statistics-container{
+    padding:7% 10%;
+    margin-left: 10px;
+   
+    
+}
+.col-lg-3{
+  height: 10em;
+}
+.statblue{
+  background-color:rgb(21, 21, 204);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  /* margin: 0px 0 10px 0px; */
+
+}
+
+.statblack{
+  background-color:black;
+  align-items: center;
+  text-align: center;
+  color:white;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  /* margin: 10px 0 0 0px; */
+}
+
+
+
+
+
+
+
 
 
 @media (max-width: 768px) {
