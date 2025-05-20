@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('./images/court.png');
+  background-image: url('./images/fieldo.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -211,10 +211,102 @@ body {
     padding: 20px;
 }
 
+/*Player cards*/
+.player-card {
+    transition: transform 0.3s;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.player-card:hover {
+    transform: translateY(-5px);
+}
+.player-img {
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+.card-body {
+    padding: 1.5rem;
+}
+.position-tag {
+    background-color: #0d6efd;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    display: inline-block;
+}
+.stats {
+    border-top: 1px solid #eee;
+    padding-top: 0.8rem;
+    margin-top: 0.8rem;
+}
 
+.view-all-btn {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+.view-all-btn:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
 
+/*MATCH RESULTS*/
+.match-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    margin-bottom: 25px;
 
-
+}
+.match-card:hover {
+    transform: translateY(-5px);
+}
+.team-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+.score {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0d6efd;
+}
+.match-date {
+    background-color: #f8f9fa;
+    padding: 8px 15px;
+    font-weight: 600;
+}
+.match-details {
+    padding: 15px;
+    border-top: 1px solid #eee;
+    
+}
+.badge-penalty {
+    background-color: #dc3545;
+    color: white;
+}
+.badge-win {
+    background-color: #198754;
+    color: white;
+}
+.badge-loss {
+    background-color: #6c757d;
+    color: white;
+}
+.badge-draw {
+    background-color: #ffc107;
+    color: #212529;
+}
 
 
 @media (max-width: 768px) {
