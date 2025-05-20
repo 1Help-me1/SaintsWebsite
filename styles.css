@@ -10,7 +10,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  overflow-x: hidden; /* Blocks horizontal scrollbar */
+  width: 100%; /* Ensures body doesn't exceed viewport */
 }
 
 
@@ -153,12 +154,12 @@ body {
 
 .carousel-indicators {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
-  z-index: 10;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  bottom: 20px; /* Adjust as needed */
 }
 
 .indicator {
